@@ -1,6 +1,6 @@
 # NKN-Commercial startup script for VPS
 
-This script is fastest method to deploy nkn-commercial node at VPS. 
+This script is the fastest method to deploy nkn-commercial node at VPS. 
 Adding this script when installing VPS will install nkn-commercial at the first boot.
 Please read the script and understand the command before use.
 Thanks to no112358/ALLinONE-nknnode. This script is modified from no112358/ALLinONE-nknnode's script.
