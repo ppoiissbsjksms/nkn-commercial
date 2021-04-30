@@ -12,4 +12,5 @@
 ## Debugging/Maintenance
 
 Locate wallet.json & wallet.pswd 
-  'cd "$(find / -type d -name "nkn-node")"'
+  `cd "$(find / -type d -name "nkn-node")"`
+  `ls`
