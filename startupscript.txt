@@ -19,8 +19,8 @@
 username="nkn"
 benaddress="<Your Beneficiary Wallet Addr>"
 
-# Insert your ChainDB host url to $websource if available. For detali of how to make your own ChainDB host server, please refer to https://github.com/no112358/ALLinONE-nknnode
-# If no url provide, nkn-commercial installation will be synced from height 0
+# Insert your ChainDB host url to $websource if available. For detail of how to make your own ChainDB host server, please refer to https://github.com/no112358/ALLinONE-nknnode
+# If no url provided, nkn-commercial installation will be synced from height 0 (will take few days)
 websource=""
 
 ######################################################
