@@ -5,6 +5,7 @@ Adding this script when installing VPS will install nkn-commercial at the first 
 Please read the script and understand the command before use.
 
 Thanks to no112358/ALLinONE-nknnode. This script is modified from no112358/ALLinONE-nknnode's script.
+Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster-with-your-own-chaindb/2753 for more details of create your own ChainDB host server. 
 
 ## Feature:
 - Install nkn-commercial automatically at first boot. (No need to login root to install)
