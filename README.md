@@ -11,6 +11,8 @@
 
 ## Debugging/Maintenance
 
-Locate wallet.json & wallet.pswd 
+wallet.json & wallet.pswd is in nkn-node folder. 
+Locate it with following command:
+
   `cd "$(find / -type d -name "nkn-node")"`
-  `ls`
+  
