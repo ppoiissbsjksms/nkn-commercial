@@ -13,9 +13,8 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 - No Fee, No Donation.  Use as you like. Feel free to change the script to suit your purpose. 
 
 ## Requirement
-- VPS
-- At least 1 core CPU / 1 gb memory/ 25 gb storage
-- Ubuntu 20.04 (other version may work, but not verified)
+- VPS - At least 1 core CPU / 1 gb memory/ 25 gb storage
+- Ubuntu 20.04
 - Root SSH key (essential)
 - NKN benificiary wallet address
 - ChainDB if available. (please refer to https://github.com/no112358/ALLinONE-nknnode)
