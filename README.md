@@ -16,7 +16,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 - VPS - At least 1 core CPU / 1 gb memory/ 25 gb storage
 - Ubuntu 20.04
 - Root SSH key (essential)
-- NKN benificiary wallet address
+- NKN beneficiary wallet address
 - ChainDB if available. (please refer to https://github.com/no112358/ALLinONE-nknnode)
 
 ## Attention
@@ -24,7 +24,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 
 ## Installation
 1. Open startupscript.txt by text editor. 
-2. Insert your NKN benificiary wallet address. `benaddress="<Your Beneficiary Wallet Addr>"`
+2. Insert your NKN beneficiary wallet address. `benaddress="<Your Beneficiary Wallet Addr>"`
 3. Insert your ChainDB host url. `websource=""`
 4. Copy & paste the script to your VPS setup page at script option.
 5. Choose your VPS setup. Remember pick the startup script option at setup.
