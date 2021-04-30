@@ -94,20 +94,20 @@ done
 ##############################
 
 # Configure Firewall and ports
-ufw allow 30001 > /dev/null 2>&1
-ufw allow 30002 > /dev/null 2>&1
-ufw allow 30003 > /dev/null 2>&1
-ufw allow 30004 > /dev/null 2>&1
-ufw allow 30005 > /dev/null 2>&1
-ufw allow 30010/tcp > /dev/null 2>&1
-ufw allow 30011/udp > /dev/null 2>&1
-ufw allow 30020/tcp > /dev/null 2>&1
-ufw allow 30021/udp > /dev/null 2>&1
-ufw allow 32768:65535/tcp > /dev/null 2>&1
-ufw allow 32768:65535/udp > /dev/null 2>&1
-ufw allow 22 > /dev/null 2>&1
-ufw allow 80 > /dev/null 2>&1
-ufw allow 443 > /dev/null 2>&1
-ufw --force enable > /dev/null 2>&1
+ufw allow 30001
+ufw allow 30002
+ufw allow 30003
+ufw allow 30004
+ufw allow 30005
+ufw allow 30010/tcp
+ufw allow 30011/udp
+ufw allow 30020/tcp
+ufw allow 30021/udp
+ufw allow 32768:65535/tcp
+ufw allow 32768:65535/udp
+ufw allow 22
+ufw allow 80
+ufw allow 443
+ufw --force enable
 
 systemctl start nkn-commercial.service
