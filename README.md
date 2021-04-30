@@ -14,6 +14,9 @@ Adding this script when installing VPS will install nkn-commercial at the first 
 
 ## Attention
 
+## Installation
+1. Copy the content in nkn
+
 
 
 ## Check Status and Pay ID Generation Fee
@@ -21,6 +24,5 @@ Adding this script when installing VPS will install nkn-commercial at the first 
 
 ## Debugging/Maintenance
 
-1. wallet.json & wallet.pswd is in nkn-node folder. Locate it with following command:
-  `cd "$(find / -type d -name "nkn-node")"`
+1. wallet.json & wallet.pswd is in nkn-node folder. Locate it with command: `cd "$(find / -type d -name "nkn-node")"`
   
