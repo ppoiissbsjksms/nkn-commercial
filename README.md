@@ -20,7 +20,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 - ChainDB if available. (please refer to https://github.com/no112358/ALLinONE-nknnode)
 
 ## Attention
-- Please make sure you have SSH key of your VPS before deploy. Password login is prohited after installation.
+- Password login is prohited after installation. Please make sure you have SSH key of your VPS before deploy. 
 
 ## Installation
 1. Open startupscript.txt by text editer. Copy & paste the script to your VPS setup page at script option.
