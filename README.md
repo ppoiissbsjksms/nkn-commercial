@@ -7,8 +7,8 @@ Thanks to no112358/ALLinONE-nknnode. This script is modified from no112358/ALLin
 
 ## Feature:
 - nkn-commercial node installation run at first boot.
-- Suitable for big miner who want deploy large number of nodes.
-
+- Suitable VPS provider without support of One-Click Deploy.
+ 
 ## Requirement
 - VPS
 - At least 1 core CPU / 1 gb memory/ 25 gb storage
