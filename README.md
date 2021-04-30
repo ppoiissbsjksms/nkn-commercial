@@ -35,7 +35,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 - After payment,  your node is ready to go.
 
 ## Debugging/Maintenance
-1. wallet.json & wallet.pswd is in nkn-node folder. Locate it with command: `cd "$(find / -type d -name "nkn-node")"`
+1. wallet.json & wallet.pswd is located at `/home/nkn/nkn-commercial/services/nkn-node` folder. Locate it with command: `cd "$(find / -type d -name "nkn-node")"`
    Suggest you to backup both files outside the VPS. You may need it when you want to change server.
 2. Check node status at terminal. `systemctl status nkn-commercial`
 3. Stop nkn-commercial when doing maintance like backup wallet or replace ChainDB. `systemctl stop nkn-commercial`
