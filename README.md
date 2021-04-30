@@ -31,8 +31,8 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 ## Check Status and Pay ID Generation Fee
 - After 10 to 15 minutes, installation of nkn-commercial will be finished. Then, download of ChainDB from your host server will be started. 
 - Check status of your node.
-   Method 1. Key in node's ip address at http://nstatus.org/ and check. Message of request ID generation fee will prompt after all installation are completely done. 
-   Method 2. Login root with SSH key and check with command `systemctl status nkn-commercial`
+   - Method 1. Key in node's ip address at http://nstatus.org/ and check. Message of request ID generation fee will prompt after all installation are completely done. 
+   - Method 2. Login root with SSH key and check with command `systemctl status nkn-commercial`
 - After payment,  your node is ready to go.
 
 ## Debugging/Maintenance
