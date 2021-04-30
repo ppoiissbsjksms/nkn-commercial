@@ -8,6 +8,8 @@ Thanks to no112358/ALLinONE-nknnode. This script is modified from no112358/ALLin
 ## Feature:
 - nkn-commercial node installation run at first boot.
 - Suitable for VPS provider without support of One-Click Deploy. Tested on Vultr and UpCloud.
+- No FEE, No Donation. Use as you like.
+- Please tell me if you success to deploy node at VPS provder other than Vultr and UpCloud. I will update it at README.
  
 ## Requirement
 - VPS
