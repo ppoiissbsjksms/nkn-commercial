@@ -12,7 +12,6 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 - Suitable for VPS provider without support of One-Click Deploy. Tested on Vultr and UpCloud.
 - No FEE, No Donation.  Use as you like. Feel free to change the script to suit your purpose. 
 - Please tell me if you success to deploy node at VPS provder other than Vultr and UpCloud. I will update it at README.
-- I only have beginner level knowledge at Linux. Please tell me if you found bugs in the script. Thank you. 
  
 ## Requirement
 - VPS
@@ -43,3 +42,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 3. Stop nkn-commercial when doing maintance like backup wallet or replace ChainDB. `systemctl stop nkn-commercial`
 4. Restart nkn-ccomercial after maintanance. `systemctl start nkn-commercial` or `systemctl restart nkn-commercial`
 5. Check node status at http://nstatus.org/
+
+## Remarks
+- Please tell me if you success to deploy node at VPS provder other than Vultr and UpCloud. I will update it at README.
+- I only have beginner level knowledge at Linux. Please tell me if you found bugs in the script. Thank you. 
