@@ -7,7 +7,7 @@ Please read the script and understand the command before use.
 Thanks to no112358/ALLinONE-nknnode. This script is modified from no112358/ALLinONE-nknnode's script.
 Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster-with-your-own-chaindb/2753 for more details of create your own ChainDB host server. 
 
-## Feature:
+## Feature
 - Install nkn-commercial automatically at first boot. (No need to login root to install)
 - Suitable for VPS provider without support of One-Click Deploy. Tested on Vultr and UpCloud.
 - No FEE, No Donation. Use as you like. Feel free to change the script to suit your purpose. 
