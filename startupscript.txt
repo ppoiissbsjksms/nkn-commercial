@@ -1,0 +1,113 @@
+#!/bin/bash
+
+# DEPLOY NKN-COMMERCIAL NEW NODE
+# v1.10
+# Copy the whole script and paste in your VPS providers's script option.
+# For Vultr, please name the startup script file with extension .sh
+
+#################
+### Attention ###
+#################
+
+# Please make sure you install your server with ssh key.
+# Password login is prohited after installation.
+
+########################
+### SCRIPT VARIABLES ###
+########################
+
+username="nkn"
+benaddress="<Your Beneficiary Wallet Addr>"
+
+# Insert your ChainDB host url to $websource if available. For detali of how to make your own ChainDB host server, please refer to https://github.com/no112358/ALLinONE-nknnode
+# If no url provide, nkn-commercial installation will be synced from height 0
+websource=""
+
+######################################################
+### UBUNTU UPDATE, ADD USER, DISABLE ROOT PWLOGIN  ###
+######################################################
+
+# Start point
+apt-get update -y; apt-get upgrade -y
+apt-get install unzip ufw -y
+
+# Add sudo user and grant privileges
+
+useradd -m -s /sbin/nologin "$username"
+usermod -a -G sudo $username
+
+# Disable root login with password
+sed --in-place 's/#PermitRootLogin.*/PermitRootLogin prohibit-password/g' /etc/ssh/sshd_config
+sed --in-place 's/^PermitRootLogin.*/PermitRootLogin prohibit-password/g' /etc/ssh/sshd_config
+sed --in-place 's/#PasswordAuthentication.*/PasswordAuthentication no/g' /etc/ssh/sshd_config
+sed --in-place 's/^PasswordAuthentication.*/PasswordAuthentication no/g' /etc/ssh/sshd_config
+systemctl restart sshd
+
+##############################
+### INSTALL NKN-COMMERCIAL ###
+##############################
+
+# disable firewall for the installation
+ufw --force disable
+
+# Install NKN node miner software
+cd /home/$username
+wget --quiet --continue https://commercial.nkn.org/downloads/nkn-commercial/linux-amd64.zip
+unzip linux-amd64.zip
+rm -f linux-amd64.zip
+mv linux-amd64 nkn-commercial
+
+chown -R $username:$username /home/$username
+chmod -R 755 /home/$username
+
+cd /home/$username/nkn-commercial
+cat > config.json <<EOF
+{
+  "beneficiaryAddr": "$benaddress"
+}
+EOF
+
+/home/$username/nkn-commercial/nkn-commercial -b $benaddress -d /home/$username/nkn-commercial/ -u $username install
+
+# Wait for DIR and wallet creation
+DIR="/home/$username/nkn-commercial/services/nkn-node/"
+timestart=$(date +%s)
+while [[ $(($(date +%s) - $timestart)) -lt 300 ]]; do # 300sec 5 min
+        if [ ! -d "$DIR"ChainDB ] && [ ! -f "$DIR"wallet.json ]; then
+	        # if folder and file don't exist wait and repeat check
+                sleep 5
+        else
+                # when file is detected
+		sleep 5
+		systemctl stop nkn-commercial.service
+                sleep 5
+		cd "$DIR"
+		rm -rf ChainDB/
+		# internet download
+		wget -O - "$websource" -q --show-progress | tar -xzf -
+		chown -R $username:$username /home/$username
+        fi
+done
+
+##############################
+### FIREWALL CONFIGURATION ###
+##############################
+
+# Configure Firewall and ports
+ufw allow 30001 > /dev/null 2>&1
+ufw allow 30002 > /dev/null 2>&1
+ufw allow 30003 > /dev/null 2>&1
+ufw allow 30004 > /dev/null 2>&1
+ufw allow 30005 > /dev/null 2>&1
+ufw allow 30010/tcp > /dev/null 2>&1
+ufw allow 30011/udp > /dev/null 2>&1
+ufw allow 30020/tcp > /dev/null 2>&1
+ufw allow 30021/udp > /dev/null 2>&1
+ufw allow 32768:65535/tcp > /dev/null 2>&1
+ufw allow 32768:65535/udp > /dev/null 2>&1
+ufw allow 22 > /dev/null 2>&1
+ufw allow 80 > /dev/null 2>&1
+ufw allow 443 > /dev/null 2>&1
+ufw --force enable > /dev/null 2>&1
+
+systemctl start nkn-commercial.service
