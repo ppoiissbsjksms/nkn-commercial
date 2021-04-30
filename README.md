@@ -1,14 +1,17 @@
 # NKN-Commercial startup script for VPS
 
 This script is the fastest method to deploy nkn-commercial node at VPS. 
+
 Adding this script when installing VPS will install nkn-commercial at the first boot.
+
 Please read the script and understand the command before use.
+
 Thanks to no112358/ALLinONE-nknnode. This script is modified from no112358/ALLinONE-nknnode's script.
 
 ## Feature:
-- nkn-commercial node installation run at first boot.
+- Install nkn-commercial automatically at first boot. (No need to login root to install)
 - Suitable for VPS provider without support of One-Click Deploy. Tested on Vultr and UpCloud.
-- No FEE, No Donation. Use as you like.
+- No FEE, No Donation. Use as you like. Feel free to change the script to suit your purpose. 
 - Please tell me if you success to deploy node at VPS provder other than Vultr and UpCloud. I will update it at README.
  
 ## Requirement
