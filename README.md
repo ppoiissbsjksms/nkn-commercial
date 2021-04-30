@@ -32,11 +32,13 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 6. Deploy
 
 ## Check Status and Pay ID Generation Fee
-- After 15 to 30  minutes, installation of nkn-commercial will be finished. Then, download of ChainDB from your host server will be started. 
+- After 15 to 30  minutes, installation of nkn-commercial will be finished. 
+- Then, download of ChainDB from your host server will be started, if applicable. 
 - Check status of your node.
    - Method 1. Key in node's ip address at http://nstatus.org/ and check. Message of request ID generation fee will prompt after all installation are completely done.
    - Method 2. Login root with SSH key and check with command `systemctl status nkn-commercial`
 - After payment,  your node is ready to go.
+- If ChainDB sync from height 0, it will take few days to become state "PERSIST_FINISHED".
 
 ## Debugging/Maintenance
 1. wallet.json & wallet.pswd is located at `/home/nkn/nkn-commercial/services/nkn-node` folder. Navigate to it with command: `cd "$(find / -type d -name "nkn-node")"`
