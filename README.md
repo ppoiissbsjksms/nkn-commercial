@@ -1,6 +1,16 @@
 # NKN-Commercial startup script for VPS
 
+This script is for fast deploy nkn-node at VPS. 
+Adding this script when installing VPS will install nkn-commercial at the first boot.
+
 ## Feature:
+
+## Requirement
+- VPS
+- 1 core CPU / 1 gb memory/ 25 gb storage
+- Ubuntu 20.04 (other version may work, but not verified)
+- root SSH key
+- ChainDB if available. (please refer to 
 
 ## Attention
 
