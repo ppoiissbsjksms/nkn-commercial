@@ -1,7 +1,7 @@
-## NKN-Commercial startup script for VPS
+# NKN-Commercial startup script for VPS
 
-# Feature:
+## Feature:
 
-# Attention
+## Attention
 
-# Debugging/Maintenance
+## Debugging/Maintenance
