@@ -36,7 +36,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 - Then, download of ChainDB from your host server will be started, if applicable. 
 - Check status of your node.
    - Method: Key in node's ip address at http://nstatus.org/ and check. Message of request ID generation fee will prompt after all installation are completely done.
-- After payment,  wait for ID generation and your node is ready to go.
+- After payment,  wait for ID generation and activation.
 - If ChainDB sync from height 0, it will take few days to become state "PERSIST_FINISHED".
 
 ## Debugging/Maintenance
