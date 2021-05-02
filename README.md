@@ -48,7 +48,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 6. Check node status at http://nstatus.org/
 
 ## Remarks
-- Please tell me if you success to deploy node at VPS provider besides Vultr and UpCloud. I will update it at README.
+- Please tell me if you success to deploy node at VPS provider besides Vultr, UpCloud or Linode. I will update README.
 - I only have beginner level knowledge at Linux. Please tell me if you found bugs in the script. Thank you. 
 - Website: https://durianpool.github.io/
 - Contact: https://durianpool.github.io/#contact
