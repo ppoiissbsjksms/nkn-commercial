@@ -9,7 +9,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 
 ## Feature
 - Install nkn-commercial automatically at first boot. 
-- No need to login root to install. No user setup needed. (user will be put in `/sbin/nologin`)
+- No need to login root to install. User will be added in `/sbin/nologin`, no other setup needed.
 - Most suitable to VPS provider without support of One-Click Deploy. Tested on Vultr, UpCloud and Linode server.
 - No Fee, No Donation.  Use as you like. Feel free to change the script to suit your purpose. 
 
