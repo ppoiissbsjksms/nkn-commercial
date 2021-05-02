@@ -40,11 +40,12 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 - If ChainDB sync from height 0, it will take few days to become state "PERSIST_FINISHED".
 
 ## Debugging/Maintenance
-1. wallet.json & wallet.pswd is located at `/home/nkn/nkn-commercial/services/nkn-node` folder. Suggest you make backup of both files outside the VPS. You may need it when you want to change server. Navigate to it with command: `cd "$(find / -type d -name "nkn-node")"`
-2. Check node status at terminal. `systemctl status nkn-commercial`
-3. Stop nkn-commercial when doing maintance like backup wallet or replace ChainDB. `systemctl stop nkn-commercial`
-4. Restart nkn-ccomercial after maintanance. `systemctl start nkn-commercial` or `systemctl restart nkn-commercial`
-5. Check node status at http://nstatus.org/
+1. Login to your root by SSH Key.
+2. wallet.json & wallet.pswd is located at `/home/nkn/nkn-commercial/services/nkn-node` folder. Suggest you make backup of both files outside the VPS. You may need it when you want to change server. Navigate to it with command: `cd "$(find / -type d -name "nkn-node")"`
+3.  Check node status at terminal. `systemctl status nkn-commercial`
+4. Stop nkn-commercial when doing maintance like backup wallet or replace ChainDB. `systemctl stop nkn-commercial`
+5. Restart nkn-ccomercial after maintanance. `systemctl start nkn-commercial` or `systemctl restart nkn-commercial`
+6. Check node status at http://nstatus.org/
 
 ## Remarks
 - Please tell me if you success to deploy node at VPS provider besides Vultr and UpCloud. I will update it at README.
