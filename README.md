@@ -15,7 +15,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 
 ## Requirement
 - Fresh VPS - At least 1 core CPU / 1 gb memory/ 25 gb storage
-- Ubuntu 20.04
+- Ubuntu 20.04/ Debian 10
 - Root SSH key (essential)
 - NKN beneficiary wallet address
 - ChainDB if available. (please refer to https://github.com/no112358/ALLinONE-nknnode)
@@ -26,10 +26,11 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 ## Installation
 1. Open [startupscript.txt](https://github.com/durianpool/nkn-commercial/blob/main/startupscript.txt) by text editor. 
 2. <b>Insert your NKN beneficiary wallet address</b> `benaddress="<Your Beneficiary Wallet Addr>"`
-3. Insert your ChainDB host url if applicable. `websource=""`
-4. Copy & paste the script to your VPS setup page at script option.
-5. Choose your VPS setup. Remember pick the startup script option at setup.
-6. Deploy
+3. Change `sshport="22"`.
+4. Insert your ChainDB host url if applicable. `websource=""`
+5. Copy & paste the script to your VPS setup page at script option.
+6. Choose your VPS setup. Remember pick the startup script option at setup.
+7. Deploy
 
 ## Check Status and Pay ID Generation Fee
 - After 15 to 30  minutes, installation of nkn-commercial will be finished. 
