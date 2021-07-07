@@ -11,12 +11,11 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 - Install nkn-commercial automatically at first boot. 
 - No need to login root to install. User will be added in `/sbin/nologin`, no other setup needed.
 - Most suitable to VPS provider without support of One-Click Deploy. Tested on Vultr, UpCloud and Linode server.
-- Tested on Ubunto 20.04 and Debian 10. (Debian has smaller size of OS, save up ~1 GB of space)
 - No Fee, No Donation.  Use as you like. Feel free to change the script to suit your purpose. 
 
 ## Requirement
 - Fresh VPS - At least 1 core CPU / 1 gb memory/ 25 gb storage
-- Ubuntu 20.04/ Debian 10
+- Ubuntu 20.04/ Debian 10 (Debian has smaller size of OS, save up ~1 GB of space)
 - Root SSH key (essential)
 - NKN beneficiary wallet address
 - ChainDB if available. (please refer to https://github.com/no112358/ALLinONE-nknnode)
