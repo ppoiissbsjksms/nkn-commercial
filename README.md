@@ -11,6 +11,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 - Install nkn-commercial automatically at first boot. 
 - No need to login root to install. User will be added in `/sbin/nologin`, no other setup needed.
 - Most suitable to VPS provider without support of One-Click Deploy. Tested on Vultr, UpCloud and Linode server.
+- Confirmed working on Debian 10. 
 - No Fee, No Donation.  Use as you like. Feel free to change the script to suit your purpose. 
 
 ## Requirement
@@ -26,7 +27,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 ## Installation
 1. Open [startupscript.txt](https://github.com/durianpool/nkn-commercial/blob/main/startupscript.txt) by text editor. 
 2. <b>Insert your NKN beneficiary wallet address</b> `benaddress="<Your Beneficiary Wallet Addr>"`
-3. Change `sshport="22"`.
+3. Change `sshport="22"`. DDOS attack may consume your monthly bandwidth usage.
 4. Insert your ChainDB host url if applicable. `websource=""`
 5. Copy & paste the script to your VPS setup page at script option.
 6. Choose your VPS setup. Remember pick the startup script option at setup.
