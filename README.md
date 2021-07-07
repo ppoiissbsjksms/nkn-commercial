@@ -15,7 +15,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 
 ## Requirement
 - Fresh VPS - At least 1 core CPU / 1 gb memory/ 25 gb storage
-- Ubuntu 20.04/ Debian 10 (Debian has smaller size of OS, save up ~1 GB of space)
+- Ubuntu 20.04/ Debian 10 (Debian has smaller size of OS, save spave up to ~1 GB)
 - Root SSH key (essential)
 - NKN beneficiary wallet address
 - ChainDB if available. (please refer to https://github.com/no112358/ALLinONE-nknnode)
