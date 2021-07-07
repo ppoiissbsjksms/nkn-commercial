@@ -26,7 +26,7 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 ## Installation
 1. Open [startupscript.txt](https://github.com/durianpool/nkn-commercial/blob/main/startupscript.txt) by text editor. 
 2. <b>Insert your NKN beneficiary wallet address</b> `benaddress="<Your Beneficiary Wallet Addr>"`
-3. Change `sshport="22"`. DDOS attack may consume your monthly bandwidth usage.
+3. Change `sshport="22"`. (DDOS attack may consume your monthly bandwidth usage)
 4. Insert your ChainDB host url if applicable. `websource=""`
 5. Copy & paste the script to your VPS setup page at script option.
 6. Choose your VPS setup. Remember pick the startup script option at setup.
