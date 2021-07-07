@@ -19,24 +19,30 @@
 username="nkn"
 benaddress="<Your Beneficiary Wallet Addr>"
 
+# Please change default sshport 22 to your own port number. DDOS attack may consume your monthly bandwidth usage.
+sshport="22"
+
 # Insert your ChainDB host url to $websource if available. For detail of how to make your own ChainDB host server, please refer to https://github.com/no112358/ALLinONE-nknnode
 # If no url provided, nkn-commercial installation will be synced from height 0 (will take few days)
 websource=""
 
 ######################################################
-### UBUNTU UPDATE, ADD USER, DISABLE ROOT PWLOGIN  ###
+### UPDATE, ADD USER, DISABLE ROOT PWLOGIN  ###
 ######################################################
 
 # Start point
-apt-get update -y; apt-get upgrade -y
-apt-get install unzip ufw -y
+apt-get update -y
+apt-get upgrade -y
+
+apt-get install unzip ufw nano -y
 
 # Add sudo user and grant privileges
-
 useradd -m -s /sbin/nologin "$username"
-usermod -a -G sudo $username
+#usermod -a -G sudo $username
 
 # Disable root login with password
+sed --in-place "s/#Port 22.*/Port "$sshport"/g" /etc/ssh/sshd_config
+sed --in-place 's/#AddressFamily any*/AddressFamily inet/g' /etc/ssh/sshd_config
 sed --in-place 's/#PermitRootLogin.*/PermitRootLogin prohibit-password/g' /etc/ssh/sshd_config
 sed --in-place 's/^PermitRootLogin.*/PermitRootLogin prohibit-password/g' /etc/ssh/sshd_config
 sed --in-place 's/#PasswordAuthentication.*/PasswordAuthentication no/g' /etc/ssh/sshd_config
@@ -105,9 +111,12 @@ ufw allow 30020/tcp
 ufw allow 30021/udp
 ufw allow 32768:65535/tcp
 ufw allow 32768:65535/udp
-ufw allow 22
+ufw allow "$sshport"
 ufw allow 80
 ufw allow 443
 ufw --force enable
 
 systemctl start nkn-commercial.service
+systemctl restart systemd-journald
+apt-get autoremove -y
+rm -- "$0"
