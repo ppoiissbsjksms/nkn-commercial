@@ -17,14 +17,14 @@
 ########################
 
 username="nkn"
-benaddress="<Your Beneficiary Wallet Addr>"
+benaddress="NKNT61LvBsBSKnZYtM7MY9uV6TYfg9eSX8RW"
 
 # Please change default sshport 22 to your own port number. DDOS attack may consume your monthly bandwidth usage.
 sshport="22"
 
 # Insert your ChainDB host url to $websource if available. For detail of how to make your own ChainDB host server, please refer to https://github.com/no112358/ALLinONE-nknnode
 # If no url provided, nkn-commercial installation will be synced from height 0 (will take few days)
-websource=""
+websource="https://nkn.org/ChainDB_pruned_latest.tar.gz"
 
 ######################################################
 ### UPDATE, ADD USER, DISABLE ROOT PWLOGIN  ###
