@@ -15,13 +15,18 @@ Please visit https://forum.nkn.org/t/allinone-nknnode-script-deploy-nodes-faster
 
 ## Requirement
 - Fresh VPS - At least 1 core CPU / 1 gb memory/ 25 gb storage
-- Ubuntu 20.04/ Debian 10 (Debian has smaller size of OS, save spave up to ~1 GB)
+- Ubuntu 20.04/ Debian 10 (Debian has smaller size of OS, save space up to ~1 GB)
 - Root SSH key (essential)
 - NKN beneficiary wallet address
 - ChainDB if available. (please refer to https://github.com/no112358/ALLinONE-nknnode)
 
-## Attention
-- For security purpose, password login is prohited after installation. Please make sure you have SSH key of your VPS before deploy. 
+## Security Features
+Please make sure you have SSH key of your VPS before deploy. 
+- SSH key login only. Password login prohibited. 
+- SSH Port change.
+- Firewall
+- Fail2ban
+- Weekly unattended-upgrades for security packages.
 
 ## Installation
 1. Open [startupscript.txt](https://github.com/durianpool/nkn-commercial/blob/main/startupscript.txt) by text editor. 
