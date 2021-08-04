@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# DEPLOY NKN-COMMERCIAL NEW NODE v1.10
+# DEPLOY NKN-COMMERCIAL NEW NODE v1.20
 # Thanks to no112358/ALLinONE-nknnode. This script is modified from no112358/ALLinONE-nknnode.
 # Copy the whole script and paste in your VPS providers's script option.
 # For Vultr, please name the startup script file with extension .sh
