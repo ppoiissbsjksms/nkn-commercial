@@ -116,6 +116,15 @@ ufw allow 80
 ufw allow 443
 ufw --force enable
 
+#Install unattended-upgrades
+apt install unattended-upgrades
+cat > /etc/apt/apt.conf.d/20auto-upgrades <<EOF
+APT::Periodic::Update-Package-Lists "7";
+APT::Periodic::Unattended-Upgrade "7";
+APT::Periodic::Download-Upgradeable-Package "7";
+APT::Periodic::AutocleanInterval "7";
+EOF
+
 systemctl start nkn-commercial.service
 systemctl restart systemd-journald
 apt-get autoremove -y
